@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <ul>
+            <li class="borderitem">List Item 1</li>
+            <li class="borderitem">List Item 2</li>
+            <li class="borderitem">List Item 3</li>
+        </ul>
+    </table>
+    
+    <button onclick ="addBorder()">Add Border</button>
+    <script>
+        
+        function addBorder()
+        {
+            var items= document.getElementsByClassName("borderitem");
+            for(var i=0;i<items.length;i++){
+                items[i].style.border="2px solid black";
+            }
+        }
+    </script>
+</body>
+</html>

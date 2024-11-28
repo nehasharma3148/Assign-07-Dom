@@ -1,0 +1,20 @@
+<!--Select the first .highlight class and change its font size to 24px.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="highlight">This is highlighted text</div>
+    <br><button onclick="changeFont()">Change Font</button>
+
+    <script>
+        function changeFont(){
+            const highlighted = document.querySelector('.highlight');
+            highlighted.style.fontSize = '28px';
+        }        
+    </script>
+</body>
+</html>

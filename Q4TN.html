@@ -1,0 +1,27 @@
+<!--Select the first <ul> and add a new <li> element to it.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <br><button onclick="changeItem()">Change Item</button>
+
+    <script>
+        function changeItem()
+        {
+            const ul = document.getElementsByTagName('ul')[0];
+            const li = document.createElement('li');
+            li.textContent = 'New Item';
+            ul.appendChild(li);
+        }
+        
+    </script>  
+</body>
+</html>

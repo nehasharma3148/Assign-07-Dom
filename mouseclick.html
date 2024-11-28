@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse Click Events</title>
+<script>
+function handleMouseClick(event) {
+    if (event.button === 0) { // Left button
+        alert("Left button clicked!");
+    } else if (event.button === 2) { // Right button
+        if (clicks === 3) {
+            var confirmed = confirm("Are you sure?");
+            if (confirmed) {
+                // Do something if confirmed
+            }
+        } else {
+            clicks++;
+        }
+    } else if (event.button === 1) { // Middle button
+        document.body.style.backgroundColor = getRandomColor();
+    }
+}
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+var clicks = 0;
+
+document.addEventListener('mousedown', handleMouseClick);
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!--Select the first element with class .button and change its background color to green.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector Example</title>
+</head>
+<body>
+    <button class="button">Click me!</button>
+    <br><br><button onclick="changeBg()">Change Background</button>
+    <script>
+        function changeBg(){
+            const button = document.querySelector('.button');
+            button.style.backgroundColor = 'green';
+        }
+        
+    </script>
+</body>
+</html>

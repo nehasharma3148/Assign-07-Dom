@@ -1,0 +1,22 @@
+<!--There’s a button with the ID toggleVisibility. When clicked, this button should toggle the visibility of a 
+<div> element with the ID content. If the content div is visible, hide it; otherwise, show it.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">This is some content.</div>
+    <button id="toggleVisibility">Toggle Visibility</button>
+    <script>
+        document.getElementById('toggleVisibility').addEventListener('click', function() {
+        let content = document.getElementById('content');
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        });
+
+    </script>
+
+</body>
+</html>

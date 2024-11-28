@@ -1,0 +1,20 @@
+<!--You have an element with the ID footer and want to change its text content to "Thank you for visiting!".
+ Write the JavaScript code to do this.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <div id="footer">Original Footer Text</div>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+        function changeText(){
+            document.getElementById('footer').textContent = 'Thank you for visiting!';
+        }
+         
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,24 @@
+<!--Select all <h2> elements and change their background color to yellow.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Title 1</h2>
+    <h2>Title 2</h2>
+    <br><button onclick="changeBorder()">Change Border</button>
+
+    <script>
+        function changeBorder(){
+            const headings = document.getElementsByTagName('h2');
+            for (let heading of headings) {
+                heading.style.backgroundColor = 'yellow';
+            }
+        }
+        
+    </script>
+</body>
+</html>

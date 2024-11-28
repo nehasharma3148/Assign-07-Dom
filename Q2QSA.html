@@ -1,0 +1,21 @@
+<!--Select all <p> elements with the class .highlight and change their text color to blue.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="highlight">Highlighted text 1</p>
+    <p class="highlight">Highlighted text 2</p>
+    <br><button onclick="changeColor()">Change TextColor</button>
+
+    <script>
+        function changeColor(){
+            const highlightedParagraphs = document.querySelectorAll('.highlight');
+            highlightedParagraphs.forEach(p => p.style.color = 'blue');
+        }        
+    </script>
+</body>
+</html>

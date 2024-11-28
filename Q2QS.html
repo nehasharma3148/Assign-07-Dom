@@ -1,0 +1,22 @@
+<!--Select the first <h1> and add a border around it.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Main Title</h1>
+    <br><button onclick="changeBorder()">Change Border</button>
+
+    <script>
+        function changeBorder(){
+            const heading = document.querySelector('h1');
+            heading.style.border = '2px solid blue';
+
+        }
+        
+    </script>
+</body>
+</html>

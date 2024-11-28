@@ -1,0 +1,28 @@
+<!--You have a form with an input field that has the ID username. Write JavaScript to retrieve 
+the value of this input field when a button with the ID submit is clicked.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="username" placeholder="Enter username">
+        <button id="submit">Submit</button>
+        <script>
+           
+           
+                document.getElementById('submit').addEventListener('click', function(event) {
+                event.preventDefault();
+                let username = document.getElementById('username').value;
+                document.write(username);
+                });
+
+            
+        </script>
+      </form>
+      
+</body>
+</html>

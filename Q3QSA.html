@@ -1,0 +1,23 @@
+<!--Select all .box elements and add a margin of 10px to each.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <br><button onclick="changeMargin()">Add Margin</button>
+
+    <script>
+        function changeMargin(){
+            const boxes = document.querySelectorAll('.box');
+            boxes.forEach(box => box.style.margin = '10px');
+        }        
+    </script>
+    
+</body>
+</html>

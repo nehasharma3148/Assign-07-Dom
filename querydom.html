@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="abc.js" >
+       
+    </script>
+</head>
+<body>
+    <h2>query selector</h2>
+    <h3 id="head">query selector2</h3>
+    <button onclick="clicked()">click</button>
+    <button onclick="clicktext()">clicktext</button>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo maiores veniam voluptates. Voluptas fuga quos enim culpa ipsum nulla!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum ullam perspiciatis dolores corrupti, minus omnis?</p>
+    <script>
+         function clicked(){
+            document.getElementById("head").style.backgroundColor="red";
+        }
+        document.querySelector("h2").style.backgroundColor="blue";
+        const nodelist=document.querySelectorAll("p");
+        nodelist[0].style.backgroundColor="yellow";
+        nodelist[1].style.backgroundColor="green";
+        
+
+        
+    </script>
+</body>
+</html>

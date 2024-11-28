@@ -1,0 +1,22 @@
+<!--Select the first <a> link inside an element with ID container and change its text to "Go Now".-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <a href="#">Link 1</a>
+    </div>
+    <br><button onclick="changeContent()">Change text</button>
+
+    <script>
+        function changeContent(){
+            const link = document.querySelector('#container a');
+            link.textContent = 'Go Now';
+        }        
+    </script>
+</body>
+</html>

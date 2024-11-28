@@ -1,0 +1,26 @@
+<!--Write a program that:Selects all the <div> elements on a webpage using getElementsByTagName.
+   and Changes the background color of each <div> to light blue.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>This is div 1</div>
+    <div>This is div 2</div>
+    <div>This is div 3</div>
+    <br><button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor(){
+            var divs = document.getElementsByTagName('div');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.backgroundColor = 'lightblue';
+            }
+        }
+        
+    </script>
+</body>
+</html>
